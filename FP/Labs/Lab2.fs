@@ -3,6 +3,9 @@
 open System
 open System.IO
 
+let inputPath = @"F:\ФП\FP\FP\resources\lab2.txt"
+let outputPath = @"F:\ФП\FP\FP\resources\lab2.out.txt"
+
 let start () =
     let write (path: string) (input: string) = File.WriteAllText(path, input)
 
@@ -10,7 +13,7 @@ let start () =
                     |> Seq.map(fun (line: string) -> line.Split(' '))
                     |> Seq.concat
 
-    let text = read(@"lab2.txt")
+    let text = read(inputPath)
 
     let rec reverse (str: string) = str |> Seq.rev |> String.Concat
 
@@ -18,4 +21,4 @@ let start () =
                 |> Seq.mapi (fun (i: int) (el: string) -> if i % 2 <> 0 then (reverse el) else el)
                 |> String.concat " "
 
-    write @"out.txt" result
+    write outputPath result
