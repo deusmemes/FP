@@ -44,9 +44,11 @@
     <ItemGroup>
         <Compile Include="AssemblyInfo.fs" />
         <Content Include="packages.config" />
+        <Compile Include="Labs\SoftwareFirm.fs" />
         <Compile Include="Labs\Lab1.fs" />
         <Compile Include="Labs\Lab2.fs" />
         <Compile Include="Labs\Lab3.fs" />
+        <Compile Include="Labs\Lab4.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
     <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />

@@ -12,6 +12,8 @@
           <e p="Lab1.fs" t="Include" />
           <e p="Lab2.fs" t="Include" />
           <e p="Lab3.fs" t="Include" />
+          <e p="Lab4.fs" t="Include" />
+          <e p="SoftwareFirm.fs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
